@@ -17,7 +17,7 @@ jobs:
       - name: Log in to DockerHub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.mukeshsaini7@gmail.com }}
+          username: ${{ secrets.mukeshsaini7 }}
           password: ${{ secrets.Yahoo@1234 }}
 
       - name: Build and Push Docker image
@@ -25,4 +25,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.mukeshsaini7@gmail.com }}/flutter-backend:latest
+          tags: ${{ secrets.mukeshsaini7 }}/flutter-backend:latest
