@@ -23,8 +23,8 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            your-mukeshsaini7/flutter-backend:latest
-            your-mukeshsaini7/flutter-backend:${{ github.sha }}
+            mukeshsaini7/flutter-backend:latest
+            mukeshsaini7/flutter-backend:${{ github.sha }}
 
   trigger-deploy:
     needs: build-and-push
